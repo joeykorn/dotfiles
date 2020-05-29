@@ -1,3 +1,23 @@
+- defaults:
+    link:
+      create: true
+      relink: true
+
+- clean: ['~']
+
+- link:
+    ~/.zshrc:
+
+- shell:
+  - [sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)", Installing Oh My Zsh]
+  - [/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)", Installing Homebrew]
+
 - brewfile:
     # This accepts the same options as `brew bundle` command:
     file: Brewfile
+
+- create:
+  - ~/projects
+
+- shell:
+  - [git submodule update --init --recursive, Installing submodules]
