@@ -6,6 +6,7 @@
 - clean: ['~']
 
 - link:
+    ~/.hyper.js:
     ~/.zshrc:
 
 - shell:
