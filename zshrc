@@ -98,7 +98,24 @@ source $ZSH/oh-my-zsh.sh
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
+# aliases
+source $HOME/.aliases
+
+# gitignore.io
 function gi() { curl -sLw '\n' https://www.gitignore.io/api/$@ ;}
 
 # starship theme
 eval "$(starship init zsh)"
+
+# set the_silver_searcher for fzf
+export FZF_DEFAULT_COMMAND='ag -g ""'
+
+# autosuggestions
+source $(brew --prefix)/share/zsh-autosuggestions/zsh-autosuggestions.zsh
+
+# syntax highlighting
+source $(brew --prefix)/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+
+# z
+. $(brew --prefix)/etc/profile.d/z.sh
+
