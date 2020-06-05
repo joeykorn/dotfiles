@@ -6,6 +6,7 @@
 - clean: ['~']
 
 - link:
+    ~/.aliases:
     ~/.hyper.js:
     ~/.zshrc:
 
