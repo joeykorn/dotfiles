@@ -6,6 +6,9 @@ alias p="cd ~/projects"
 # shortcuts
 alias c="clear"
 
+# trash
+alias rm="trash"
+
 # chrome
 alias chrome='/Applications/Google\ Chrome.app/Contents/MacOS/Google\ Chrome'
 
