@@ -15,5 +15,6 @@
   "files.autoSave": "afterDelay",
   "workbench.colorTheme": "Dracula",
   "workbench.iconTheme": "vscode-icons",
+  "workbench.sideBar.location": "right",
   "vsicons.dontShowNewVersionMessage": true
 }
