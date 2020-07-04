@@ -13,8 +13,14 @@
   "editor.minimap.enabled": false,
   "editor.tabSize": 2,
   "files.autoSave": "afterDelay",
-  "workbench.colorTheme": "Dracula",
+  "workbench.colorTheme": "Dracula Pro",
   "workbench.iconTheme": "vscode-icons",
   "workbench.sideBar.location": "right",
-  "vsicons.dontShowNewVersionMessage": true
+  "vsicons.dontShowNewVersionMessage": true,
+  "workbench.editorAssociations": [
+    {
+      "viewType": "default",
+      "filenamePattern": "*.html"
+    }
+  ],
 }
