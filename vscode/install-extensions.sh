@@ -5,3 +5,4 @@ code --install-extension vscode-icons-team.vscode-icons
 code --install-extension svelte.svelte-vscode
 code --install-extension ardenivanov.svelte-intellisense
 code --install-extension fivethree.vscode-svelte-snippets
+code --install-extension csstools.postcss
