@@ -3,13 +3,10 @@
     "source.fixAll.eslint": true
   },
   "editor.detectIndentation": false,
-  "editor.fontFamily": "Fira Code",
+  "editor.fontFamily": "Hack",
   "editor.fontLigatures": true,
   "editor.fontSize": 17,
-  "editor.formatOnSave": true,
-  "[javascript]": {
-    "editor.formatOnSave": false
-  },
+  "editor.formatOnSave": false,
   "editor.minimap.enabled": false,
   "editor.tabSize": 2,
   "files.autoSave": "afterDelay",
@@ -17,10 +14,8 @@
   "workbench.iconTheme": "vscode-icons",
   "workbench.sideBar.location": "right",
   "vsicons.dontShowNewVersionMessage": true,
-  "workbench.editorAssociations": [
-    {
-      "viewType": "default",
-      "filenamePattern": "*.html"
-    }
-  ],
+  "workbench.editorAssociations": {
+    "*.html": "default",
+    "*.ipynb": "jupyter.notebook.ipynb"
+  },
 }
