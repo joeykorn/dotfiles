@@ -18,4 +18,8 @@
     "*.html": "default",
     "*.ipynb": "jupyter.notebook.ipynb"
   },
+  "[svelte]": {
+    "editor.formatOnSave": true,
+    "editor.defaultFormatter": "svelte.svelte-vscode"
+  }
 }
