@@ -3,20 +3,30 @@
       create: true
       relink: true
 
-- clean: ['~']
+- clean: ['~', '~/.config']
 
 - link:
     ~/.aliases:
     ~/.hyper.js:
     ~/.zshrc:
+    ~/.config/kitty:
+      path: config/kitty
+    ~/.config/lvim:
+      path: config/lvim
 
 - shell:
-  - [sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)", Installing Oh My Zsh]
-  - [/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)", Installing Homebrew]
+  - [sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)", Installing Oh My Zsh]
+  - [/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)", Installing Homebrew]
 
 - brewfile:
     # This accepts the same options as `brew bundle` command:
     file: Brewfile
+
+# lunarvim
+- shell:
+  - [curl https://sh.rustup.rs -sSf | sh, Installing Cargo]
+  - [bash <(curl -s https://raw.githubusercontent.com/lunarvim/lunarvim/master/utils/installer/install.sh), Installing LunarVim]
+  - [cd ~ && ln -s `pwd`/.local/bin/lvim /usr/local/bin]
 
 # vscode
 - link:

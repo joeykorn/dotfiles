@@ -1,13 +1,13 @@
 #!/usr/bin/env bash
 
 # cd
-alias p="cd ~/projects"
+alias p='cd ~/projects'
 
 # shortcuts
-alias c="clear"
+alias c='clear'
 
 # trash
-alias rm="trash"
+alias rm='trash'
 
 # chrome
 alias chrome='/Applications/Google\ Chrome.app/Contents/MacOS/Google\ Chrome'
@@ -16,4 +16,7 @@ alias chrome='/Applications/Google\ Chrome.app/Contents/MacOS/Google\ Chrome'
 alias brewu='brew update && brew upgrade && brew cleanup && brew doctor'
 
 # lock screen
-alias afk="/System/Library/CoreServices/Menu\ Extras/User.menu/Contents/Resources/CGSession -suspend"
+alias afk='/System/Library/CoreServices/Menu\ Extras/User.menu/Contents/Resources/CGSession -suspend'
+
+# lvim
+alias v='lvim'
