@@ -27,3 +27,5 @@ cask "hyper"
 cask "imageoptim"
 cask "slack"
 cask "visual-studio-code"
+
+mas "Xcode", id: 497799835
