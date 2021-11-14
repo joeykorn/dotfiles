@@ -9,8 +9,8 @@ alias c='clear'
 # trash
 alias rm='trash'
 
-# chrome
-alias chrome='/Applications/Google\ Chrome.app/Contents/MacOS/Google\ Chrome'
+# firefox
+alias firefox='/Applications/Firefox.app/Contents/MacOS/firefox-bin'
 
 # homebrew
 alias brewu='brew update && brew upgrade && brew cleanup && brew doctor'
