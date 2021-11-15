@@ -6,12 +6,11 @@ filled in as strings with either
 a global executable or a path to
 an executable
 ]]
--- THESE ARE EXAMPLE CONFIGS FEEL FREE TO CHANGE TO WHATEVER YOU WANT
 
 -- general
 lvim.log.level = "warn"
 lvim.format_on_save = true
-lvim.colorscheme = "onedarker"
+lvim.colorscheme = "dracula"
 
 -- keymappings [view all the defaults by pressing <leader>Lk]
 lvim.leader = "space"
@@ -56,21 +55,27 @@ lvim.keys.normal_mode["<C-s>"] = ":w<cr>"
 -- After changing plugin config exit and reopen LunarVim, Run :PackerInstall :PackerCompile
 lvim.builtin.dashboard.active = true
 lvim.builtin.terminal.active = true
-lvim.builtin.nvimtree.setup.view.side = "left"
+lvim.builtin.nvimtree.setup.view.side = "right"
 lvim.builtin.nvimtree.show_icons.git = 0
 
--- if you don't want all the parsers change this to a table of the ones you want
+-- Language parser
+
+-- Provides basic syntax features like syntax highlighting and code folding.
+-- Allows other plugins to use the parsed syntax tree for other purposes
+-- e.g. nvim-autopairs, nvim-comment, etc
 lvim.builtin.treesitter.ensure_installed = {
   "bash",
   "c",
+  "html",
   "javascript",
   "json",
   "lua",
   "python",
   "typescript",
   "css",
+  "scss",
+  "svelte",
   "rust",
-  "java",
   "yaml",
 }
 
@@ -148,13 +153,13 @@ lvim.builtin.treesitter.highlight.enabled = true
 -- }
 
 -- Additional Plugins
--- lvim.plugins = {
---     {"folke/tokyonight.nvim"},
+lvim.plugins = {
+    {"Mofiqul/dracula.nvim"},
 --     {
 --       "folke/trouble.nvim",
 --       cmd = "TroubleToggle",
 --     },
--- }
+}
 
 -- Autocommands (https://neovim.io/doc/user/autocmd.html)
 -- lvim.autocommands.custom_groups = {
