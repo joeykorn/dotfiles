@@ -125,3 +125,5 @@ source $(brew --prefix)/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zs
 # z
 . $(brew --prefix)/etc/profile.d/z.sh
 
+# starting directory
+cd ~/projects
