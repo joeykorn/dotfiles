@@ -1,7 +1,8 @@
 #!/usr/bin/env bash
 
 # cd
-alias p='cd ~/projects'
+alias p="cd $PROJECTS"
+alias n="cd $ICLOUD/notes"
 
 # shortcuts
 alias c='clear'
