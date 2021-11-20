@@ -25,6 +25,7 @@ cask "font-hack-nerd-font"
 cask "imageoptim"
 cask "kitty"
 cask "raycast"
+cask "rectangle"
 cask "slack"
 cask "visual-studio-code"
 
