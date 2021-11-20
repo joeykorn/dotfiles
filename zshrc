@@ -12,6 +12,8 @@ source $ZSH/oh-my-zsh.sh
 export EDITOR='lvim'
 export TERMINAL='kitty'
 export BROWSER='firefox'
+export PROJECTS="$HOME/projects"
+export ICLOUD="$HOME/Library/Mobile\ Documents/com~apple~CloudDocs"
 
 # aliases
 source $HOME/.aliases
@@ -126,4 +128,4 @@ source $(brew --prefix)/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zs
 . $(brew --prefix)/etc/profile.d/z.sh
 
 # starting directory
-cd ~/projects
+cd $PROJECTS
