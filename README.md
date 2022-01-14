@@ -8,6 +8,12 @@
 `git submodule update --remote dotbot`\
 `git submodule update --remote dotbot-brewfile`
 
+## Update LunarVim
+`:LvimUpdate`
+
+### Update plugins
+`:PackerUpdate`
+
 ## Uses
 ### macos
 - [macos defaults](https://github.com/mathiasbynens/dotfiles/blob/main/.macos)
