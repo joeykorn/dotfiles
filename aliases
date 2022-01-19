@@ -20,5 +20,4 @@ alias brewu='brew update && brew upgrade && brew cleanup && brew doctor'
 alias afk='/System/Library/CoreServices/Menu\ Extras/User.menu/Contents/Resources/CGSession -suspend'
 
 # lvim
-alias lvim='~/.local/bin/lvim'
 alias v='lvim'
