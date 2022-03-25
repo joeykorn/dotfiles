@@ -14,6 +14,10 @@
 ### Update plugins
 `:PackerUpdate`
 
+### Config
+location: `config/lvim/config.lua`
+- [config.example.lua](https://github.com/LunarVim/LunarVim/blob/rolling/utils/installer/config.example.lua)
+
 ## Uses
 ### macos
 - [macos defaults](https://github.com/mathiasbynens/dotfiles/blob/main/.macos)
