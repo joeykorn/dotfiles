@@ -59,7 +59,8 @@ lvim.builtin.telescope.defaults.file_ignore_patterns = { ".git", "node_modules" 
 
 -- TODO: User Config for predefined plugins
 -- After changing plugin config exit and reopen LunarVim, Run :PackerInstall :PackerCompile
-lvim.builtin.dashboard.active = true
+lvim.builtin.alpha.active = true
+lvim.builtin.alpha.mode = "dashboard"
 lvim.builtin.notify.active = true
 lvim.builtin.terminal.active = true
 lvim.builtin.nvimtree.setup.view.side = "right"
@@ -92,7 +93,7 @@ lvim.builtin.treesitter.highlight.enabled = true
 -- ---@usage disable automatic installation of servers
 -- lvim.lsp.automatic_servers_installation = false
 
--- ---@usage Select which servers should be configured manually. Requires `:LvimCacheRest` to take effect.
+-- ---@usage Select which servers should be configured manually. Requires `:LvimCacheReset` to take effect.
 -- See the full default list `:lua print(vim.inspect(lvim.lsp.override))`
 -- vim.list_extend(lvim.lsp.override, { "pyright" })
 
