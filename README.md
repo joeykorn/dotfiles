@@ -8,6 +8,9 @@
 `git submodule update --remote dotbot`\
 `git submodule update --remote dotbot-brewfile`
 
+## Update Homebrew and packages
+`brew update && upgrade`
+
 ## Update LunarVim
 `:LvimUpdate`
 
