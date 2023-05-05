@@ -16,7 +16,7 @@
 ## LunarVim
 #### after fresh installation
 symlink lvim command: ``cd ~ && ln -s `pwd`/.local/bin/lvim /usr/local/bin``\
-symlink lvim config: `ln -s $HOME/projects/dotfiles/config/lvim/config.lua ~/.config/lvim`
+symlink lvim config: `ln -s $HOME/projects/dotfiles/config/lvim/config.lua ~/.config/lvim/`
 
 #### [update LunarVim and plugins](https://www.lunarvim.org/docs/installation#updating-lunarvim)
 `:LvimUpdate`\
