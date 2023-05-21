@@ -143,6 +143,15 @@ lvim.plugins = {
       })
     end,
   },
+  -- General
+  {
+    -- highlight and search for todo comments
+    "folke/todo-comments.nvim",
+    event = "BufRead",
+    config = function()
+      require("todo-comments").setup()
+    end,
+  },
 }
 
 -- -- Autocommands (`:help autocmd`) <https://neovim.io/doc/user/autocmd.html>
