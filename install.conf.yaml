@@ -10,8 +10,8 @@
     ~/.zshrc:
     ~/.config/kitty:
       path: config/kitty
-    ~/.config/lvim:
-      path: config/lvim
+    ~/.config/nvim/lua/user:
+      path: config/astronvim/lua/user
 
 - shell:
   - [sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)", Installing Oh My Zsh]
@@ -22,19 +22,8 @@
     # This accepts the same options as `brew bundle` command:
     file: Brewfile
 
-# lunarvim
 - shell:
-  - [curl https://sh.rustup.rs -sSf | sh, Installing Cargo]
-  - [LV_BRANCH='release-1.3/neovim-0.9' bash <(curl -s https://raw.githubusercontent.com/LunarVim/LunarVim/release-1.3/neovim-0.9/utils/installer/install.sh), Installing LunarVim]
-  - [cd ~ && ln -s `pwd`/.local/bin/lvim /usr/local/bin]
-
-# vscode
-- link:
-    ~/Library/Application Support/Code/User/settings.json: vscode/settings.json
-    ~/Library/Application Support/Code/User/keybindings.json: vscode/keybindings.json
-
-- shell:
-  - [vscode/install-extensions.sh]
+  - [git clone --depth 1 https://github.com/AstroNvim/AstroNvim ~/.config/nvim, Installing AstroNvim]
 
 - create:
   - ~/projects

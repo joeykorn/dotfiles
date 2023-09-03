@@ -19,5 +19,6 @@ alias brewu='brew update && brew upgrade && brew cleanup && brew doctor'
 # lock screen
 alias afk='/System/Library/CoreServices/Menu\ Extras/User.menu/Contents/Resources/CGSession -suspend'
 
-# lvim
-alias v='lvim'
+# nvim
+alias vi='nvim'
+alias vim='nvim'
