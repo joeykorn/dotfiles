@@ -9,7 +9,7 @@ plugins=(git)
 source $ZSH/oh-my-zsh.sh
 
 # env variables
-export EDITOR='lvim'
+export EDITOR='nvim'
 export TERMINAL='kitty'
 export BROWSER='firefox'
 export PROJECTS="$HOME/projects"
