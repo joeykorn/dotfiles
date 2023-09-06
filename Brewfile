@@ -1,7 +1,5 @@
 tap "homebrew/bundle"
-tap "homebrew/cask"
 tap "homebrew/cask-fonts"
-tap "homebrew/core"
 
 brew "bash"
 brew "fzf"
@@ -17,17 +15,16 @@ brew "zsh"
 brew "zsh-autosuggestions"
 brew "zsh-syntax-highlighting"
 
-cask "affinity-designer"
-cask "affinity-photo"
 cask "bitwarden"
-cask "element"
+cask "brave-browser"
 cask "firefox"
 cask "flux"
-cask "font-hack"
-cask "font-hack-nerd-font"
 cask "imageoptim"
+cask 'insomnia'
 cask "kitty"
-cask "onlyoffice"
 cask "raycast"
 cask "rectangle"
-cask "slack"
+
+# Fonts
+cask "font-source-code-pro"
+cask "font-symbols-only-nerd-font"
