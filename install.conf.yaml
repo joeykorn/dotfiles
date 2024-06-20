@@ -3,30 +3,44 @@
       create: true
       relink: true
 
-- clean: ['~', '~/.config']
+- clean: ["~", "~/.config"]
 
 - link:
     ~/.aliases:
     ~/.zshrc:
+    ~/.zshenv:
+    ~/.zprofile:
+    ~/.config/zsh:
+      path: config/zsh
+    ~/.config/sheldon:
+      path: config/sheldon
     ~/.config/kitty:
       path: config/kitty
-    ~/.config/nvim/lua/user:
-      path: config/astronvim/lua/user
+    ~/.config/nvim:
+      path: config/nvim
 
 - shell:
-  - [sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)", Installing Oh My Zsh]
-  - [/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)", Installing Homebrew]
-  - [curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.3/install.sh | bash, Installing Node Version Manager]
+    - [
+        /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)",
+        Installing Homebrew,
+      ]
+    - [
+        curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.3/install.sh | bash,
+        Installing Node Version Manager,
+      ]
 
 - brewfile:
     # This accepts the same options as `brew bundle` command:
     file: Brewfile
 
 - shell:
-  - [git clone --depth 1 https://github.com/AstroNvim/AstroNvim ~/.config/nvim, Installing AstroNvim]
+    - [
+        git clone --depth 1 https://github.com/AstroNvim/AstroNvim ~/.config/nvim,
+        Installing AstroNvim,
+      ]
 
 - create:
-  - ~/projects
+    - ~/projects
 
 - shell:
-  - [git submodule update --init --recursive, Installing submodules]
+    - [git submodule update --init --recursive, Installing submodules]
