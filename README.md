@@ -23,7 +23,7 @@
 
 ### terminal/editor
 - [kitty](https://sw.kovidgoyal.net/kitty/)
-- [zsh](https://www.zsh.org/) with [oh my zsh](https://ohmyz.sh/)
+- [zsh](https://www.zsh.org/)
 - [neovim](https://neovim.io/) with [astronvim](https://astronvim.com/)
 
 ## Resources
