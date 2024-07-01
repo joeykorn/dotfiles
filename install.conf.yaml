@@ -6,18 +6,11 @@
 - clean: ["~", "~/.config"]
 
 - link:
-    ~/.aliases:
     ~/.zshrc:
     ~/.zshenv:
     ~/.zprofile:
-    ~/.config/zsh:
-      path: config/zsh
-    ~/.config/sheldon:
-      path: config/sheldon
-    ~/.config/kitty:
-      path: config/kitty
-    ~/.config/nvim:
-      path: config/nvim
+    ~/.config/:
+      path: config/*
 
 - shell:
     - [

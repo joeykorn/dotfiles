@@ -1,0 +1,39 @@
+# use colors in output
+alias ls='ls --color=auto'
+alias grep='grep --color'
+
+# list files
+alias l='ls -lFh'     
+alias la='ls -lAFh'   
+alias ll='ls -l'      
+
+# cd
+alias ..='cd ..'
+
+# git
+alias g='git'
+alias gb='git branch'
+alias gcl='git clone --recurse-submodules'
+alias gcmsg='git commit --message'
+alias gco='git checkout'
+alias gcp='git cherry-pick'
+alias gd='git diff'
+alias gdca='git diff --cached'
+alias gf='git fetch'
+alias glo='git log --oneline --decorate'
+alias glol="git log --graph --pretty='%Cred%h%Creset -%C(auto)%d%Creset %s %Cgreen(%ar) %C(bold blue)<%an>%Creset'"
+alias gst='git status'
+
+# nvim
+alias vi='$EDITOR'
+alias vim='$EDITOR'
+
+# trash
+alias rm='trash'
+
+# prevent overwriting
+alias cp='cp -i'
+alias mv='mv -i'
+
+# homebrew
+alias brewu='brew update && brew upgrade && brew cleanup && brew doctor'
