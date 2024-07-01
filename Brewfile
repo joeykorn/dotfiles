@@ -16,6 +16,7 @@ brew "zsh"
 
 cask "bitwarden"
 cask "brave-browser"
+cask "docker"
 cask "firefox"
 cask "flux"
 cask "imageoptim"
