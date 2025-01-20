@@ -12,6 +12,7 @@ brew "node"
 brew "ripgrep"
 brew "sheldon"
 brew "vim"
+brew "webp"
 brew "zoxide"
 brew "zsh"
 
