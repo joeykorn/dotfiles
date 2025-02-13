@@ -6,10 +6,15 @@
 return {
   "AstroNvim/astrocommunity",
   { import = "astrocommunity.colorscheme.catppuccin" },
+  { import = "astrocommunity.pack.html-css" },
+  { import = "astrocommunity.pack.json" },
   { import = "astrocommunity.pack.lua" },
   { import = "astrocommunity.pack.svelte" },
   { import = "astrocommunity.pack.markdown" },
   { import = "astrocommunity.pack.tailwindcss" },
+  { import = "astrocommunity.pack.toml" },
   { import = "astrocommunity.pack.typescript" },
+  { import = "astrocommunity.pack.yaml" },
+  { import = "astrocommunity.search.grug-far-nvim" },
   -- import/override with your plugins folder
 }
