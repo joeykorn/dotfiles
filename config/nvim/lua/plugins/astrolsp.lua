@@ -7,6 +7,13 @@
 return {
   "AstroNvim/astrolsp",
   ---@type AstroLSPOpts
+  autocmds = {
+    vim.api.nvim_create_autocmd("BufReadPost", {
+      pattern = "*.env",
+      callback = function(e) vim.diagnostic.enable(false, { bufnr = e.buf }) end,
+      desc = "Disable diagnostics for .env files",
+    }),
+  },
   opts = {
     -- Configuration table of features provided by AstroLSP
     features = {
